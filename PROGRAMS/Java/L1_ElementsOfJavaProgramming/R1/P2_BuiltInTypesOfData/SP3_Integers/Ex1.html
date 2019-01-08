@@ -1,0 +1,44 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Ex1</title><style></style></head><body id="preview">
+<h1><a id="Integer_solved_problem_0"></a>Integer solved problem</h1>
+<p>Compilation:  <code>javac IntOps.java</code><br>
+Execution:    <code>java IntOps a b</code></p>
+<pre><code>/******************************************************************************
+ *  
+ *  Illustrates the integer operations a + b, a * b, a / b, and a % b.
+ *
+ *  % java IntOps 1234 99
+ *  1234 + 99 = 1333
+ *  1234 * 99 = 122166
+ *  1234 / 99 = 12
+ *  1234 % 99 = 46
+ *  1234 = 12 * 99 + 46
+ * 
+ *  % java IntOps 10 -3
+ *  10 + -3 = 7
+ *  10 * -3 = -30
+ *  10 / -3 = -3
+ *  10 % -3 = 1
+ *  10 = -3 * -3 + 1
+ *
+ ******************************************************************************/
+
+public class IntOps { 
+
+    public static void main(String[] args) {
+        int a = Integer.parseInt(args[0]);
+        int b = Integer.parseInt(args[1]);
+        int sum  = a + b;
+        int prod = a * b;
+        int quot = a / b;
+        int rem  = a % b;
+
+        System.out.println(a + &quot; + &quot; + b + &quot; = &quot; + sum);
+        System.out.println(a + &quot; * &quot; + b + &quot; = &quot; + prod);
+        System.out.println(a + &quot; / &quot; + b + &quot; = &quot; + quot);
+        System.out.println(a + &quot; % &quot; + b + &quot; = &quot; + rem);
+        System.out.println(a + &quot; = &quot; + quot + &quot; * &quot; + b + &quot; + &quot; + rem);
+    }
+}
+</code></pre>
+
+</body></html>

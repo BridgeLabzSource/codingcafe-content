@@ -1,0 +1,40 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Ex1</title><style></style></head><body id="preview">
+<h1><a id="Type_of_conversion_solved_problem_0"></a>Type of conversion solved problem</h1>
+<p>Compilation:  <code>javac RandomInt.java</code><br>
+Execution:    <code>java RandomInt N</code></p>
+<pre><code>/******************************************************************************
+ *  
+ *  Prints a pseudo-random integer between 0 and N-1.
+ *  Illustrate an explicit type conversion (cast) from double to int.
+ *
+ *  % java RandomInt 6
+ *  Your random integer is: 5
+ *
+ *  % java RandomInt 6
+ *  Your random integer is: 0
+ *
+ *  % java RandomInt 1000
+ *  Your random integer is: 129
+ *
+ *  % java RandomInt 1000
+ *  Your random integer is: 333
+ *
+ ******************************************************************************/
+
+public class RandomInt { 
+    public static void main(String[] args) { 
+        // a positive integer
+        int n = Integer.parseInt(args[0]);
+
+        // a pseudo-random real between 0.0 and 1.0
+        double r = Math.random(); 
+
+        // a pseudo-random integer between 0 and n-1
+        int value = (int) (r * n);
+
+        System.out.println(value);
+    }
+}
+</code></pre>
+
+</body></html>

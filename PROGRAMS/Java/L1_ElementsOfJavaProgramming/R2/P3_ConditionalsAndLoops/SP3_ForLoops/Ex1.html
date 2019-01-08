@@ -1,0 +1,55 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Ex1</title><style></style></head><body id="preview">
+<h1><a id="For_loop_solved_problem_0"></a>For loop solved problem</h1>
+<p>Compilation:  <code>javac DivisorPattern.java</code><br>
+Execution:    <code>java DivisorPattern 20</code></p>
+<pre><code>/******************************************************************************
+ *  
+ *  Prints a table where entry (i, j) is a '* ' if i divides j
+ *  or j divides i and '. ' otherwise.
+ *
+ *
+ *  % java DivisorPattern 20
+ *  * * * * * * * * * * * * * * * * * * * * 1
+ *  * *   *   *   *   *   *   *   *   *   * 2
+ *  *   *     *     *     *     *     *     3
+ *  * *   *       *       *       *       * 4
+ *  *       *         *         *         * 5
+ *  * * *     *           *           *     6
+ *  *           *             *             7
+ *  * *   *       *               *         8
+ *  *   *           *                 *     9
+ *  * *     *         *                   * 10
+ *  *                   *                   11
+ *  * * * *   *           *                 12
+ *  *                       *               13
+ *  * *         *             *             14
+ *  *   *   *                   *           15
+ *  * *   *       *               *         16
+ *  *                               *       17
+ *  * * *     *     *                 *     18
+ *  *                                   *   19
+ *  * *   * *         *                   * 20
+ *
+ ******************************************************************************/
+
+public class DivisorPattern {
+
+    public static void main(String[] args) { 
+        int n = Integer.parseInt(args[0]);
+
+        for (int i = 1; i &lt;= n; i++) {
+            for (int j = 1; j &lt;= n; j++) {
+                if (i % j == 0 || j % i == 0) {
+                    System.out.print(&quot;* &quot;); 
+                }
+                else {
+                    System.out.print(&quot;  &quot;); 
+                }
+            }
+            System.out.println(i);
+        }
+    }
+}
+</code></pre>
+
+</body></html>
